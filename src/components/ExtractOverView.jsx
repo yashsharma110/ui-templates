@@ -35,7 +35,7 @@ const ExtractOverview = () => {
 
         {/* 3D block image placeholder */}
         <image
-          href="/public/design1.png"
+          href="/design1.PNG"
           x="60"
           y="210"
           width="280"

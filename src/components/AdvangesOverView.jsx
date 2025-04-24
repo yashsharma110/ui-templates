@@ -64,7 +64,7 @@ const AdvantagesOverview = () => {
 
         {/* Right Custom Design (replace href with your image path) */}
         <image
-          href="/public/design.png"
+          href="/design.PNG"
           x="650"
           y="100"
           width="400"
