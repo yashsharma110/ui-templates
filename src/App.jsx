@@ -4,6 +4,9 @@ import ExtractOverview from "./components/ExtractOverView";
 import VerifyOverview from "./components/VerifyOverView";
 import DeliverOverview from "./components/DeliverOverView";
 import AdvantagesOverview from "./components/AdvangesOverView";
+import Advantages from "./components/Advantages";
+import WhySnoOverview from "./components/WhySnoOverview";
+import TestimonialOverview from "./components/TestimonialOverview";
 
 function App() {
   return (
@@ -35,6 +38,15 @@ function App() {
       <div className="w-full h-screen overflow-y-auto">
         <AdvantagesOverview />
       </div>
+      {/* Another vertical section below Advantages */}
+      <div className="w-full h-screen">
+        <Advantages />
+        <WhySnoOverview />
+        <TestimonialOverview />
+      </div>
+      {/* <div className="w-full h-screen">
+        <WhySnoOverview />
+      </div> */}
     </>
   );
 }

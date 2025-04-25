@@ -5,24 +5,26 @@ const VerifyOverview = () => {
     <div className="w-full h-full bg-white overflow-hidden flex items-center justify-center p-8">
       <svg viewBox="0 0 1000 400" className="w-full h-full">
         {/* Text Content */}
-        <foreignObject x="20" y="20" width="400" height="200">
+        <foreignObject x="20" y="58" width="600" height="200">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
           >
-            <h2 style={{ fontSize: "36px", fontWeight: 300, margin: 0 }}>
+            <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "28px", fontWeight: 800, margin: "8px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "12px 0" }}>
               Verify
             </h3>
-            <p style={{ fontSize: "16px", lineHeight: 1.4, margin: 0 }}>
+            <p style={{ fontSize: "10px", lineHeight: 1.4, margin: 0 }}>
               Ensuring data integrity through meticulous human review.
               <br />A dual-layer verification process complemented by
               human-augmented vetting, where the selected invoice details will
+              <br />
               be attested for accuracy, consistency & compliance with
-              organizational policies & regulatory standards, thereby proving
-              error-free output.
+              organizational policies & regulatory standards, thereby
+              <br />
+              proving error-free output.
             </p>
           </div>
         </foreignObject>
@@ -41,7 +43,7 @@ const VerifyOverview = () => {
         ))}
 
         {/* 3D Panels: front (black), mid (gray), back (light gray) */}
-        <g transform="translate(450, 200)">
+        <g transform="translate(450, 400)">
           {/* Front panel */}
           <polygon points="0,0 80,-160 150,-150 70,10" fill="black" />
           {/* Mid panel */}

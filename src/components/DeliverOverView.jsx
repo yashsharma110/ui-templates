@@ -3,20 +3,20 @@ import React from "react";
 const DeliverOverview = () => {
   return (
     <div className="w-full h-full bg-white overflow-hidden flex items-center justify-center p-8">
-      <svg viewBox="0 0 1200 400" className="w-full h-full">
+      <svg viewBox="0 0 1000 400" className="w-full h-full">
         {/* Text Content */}
-        <foreignObject x="20" y="20" width="500" height="200">
+        <foreignObject x="20" y="58" width="600" height="200">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
           >
-            <h2 style={{ fontSize: "36px", fontWeight: 300, margin: 0 }}>
+            <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "28px", fontWeight: 800, margin: "8px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "12px 0" }}>
               Deliver
             </h3>
-            <p style={{ fontSize: "16px", lineHeight: 1.4, margin: 0 }}>
+            <p style={{ fontSize: "10px", lineHeight: 1.4, margin: 0 }}>
               Receive clean, verified invoices ready for instant downstream
               processing.
               <br />
@@ -24,8 +24,8 @@ const DeliverOverview = () => {
               ensuring immediate usability for your financial systems.
               <br />
               Sync with ERP platforms or internal IT systems with ease, built
-              for seamless interoperability, integrating with existing workflows
-              to enable faster approvals.
+              for seamless interoperability, integrating with
+              <br /> existing workflows to enable faster approvals.
             </p>
           </div>
         </foreignObject>
@@ -34,8 +34,8 @@ const DeliverOverview = () => {
         {[-2, -1, 0, 1, 2].map((offset, i) => (
           <path
             key={i}
-            d={`M 50 260 C 400 260, 700 ${260 + offset * 60}, 1150 ${
-              260 + offset * 60
+            d={`M 50 290 C 400 260, 700 ${360 + offset * 60}, 1150 ${
+              360 + offset * 60
             }`}
             stroke="black"
             strokeWidth="2"
