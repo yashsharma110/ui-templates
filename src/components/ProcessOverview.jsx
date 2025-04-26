@@ -1,60 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const ProcessOverview = () => {
-  useEffect(() => {
-    const lines = document.querySelectorAll(".flow-line");
-    const outputLine = document.querySelector(".output-line");
-
-    // Initialize stroke dash styles on the curves
-    lines.forEach((path) => {
-      const length = path.getTotalLength();
-      path.style.strokeDasharray = length;
-      path.style.strokeDashoffset = length;
-    });
-
-    // Initialize the output line too
-    if (outputLine) {
-      const length = outputLine.getTotalLength();
-      outputLine.style.strokeDasharray = length;
-      outputLine.style.strokeDashoffset = length;
-    }
-
-    const handleScroll = () => {
-      const scrollLeft = window.scrollX;
-      const progress = Math.min(scrollLeft / 100, 1);
-
-      // Animate each curve
-      lines.forEach((path) => {
-        const length = path.getTotalLength();
-        path.style.strokeDashoffset = length * (1 - progress);
-      });
-
-      // Animate the straight output line starting at 90% of that progress
-      if (outputLine) {
-        const length = outputLine.getTotalLength();
-        const straightLineProgress = Math.max(0, (progress - 0.9) / 0.1);
-        outputLine.style.strokeDashoffset = length * (1 - straightLineProgress);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className="w-[3000px] h-screen bg-white overflow-hidden">
-      <style>
-        {`
-          .flow-line, .output-line {
-            transition: stroke-dashoffset 0.2s ease-out;
-          }
-        `}
-      </style>
-
+    <div className="w-full h-full bg-white">
       <svg
-        width="3000"
-        height="100%"
-        viewBox="0 0 4000 800"
+        viewBox="0 0 1800 780"
+        className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
       >
         {/* Diamond nodes */}
@@ -75,7 +26,6 @@ const ProcessOverview = () => {
         {[0, 1, 2, 3, 4].map((i) => (
           <path
             key={`line-${i}`}
-            className="flow-line"
             d={`M ${50 + i * 60} 30 C ${60 + i * 60} 700, ${
               200 + i * 50
             } 600, 500 610`}
@@ -106,12 +56,11 @@ const ProcessOverview = () => {
           strokeWidth="2"
         />
 
-        {/* --- RESTORED OUTPUT LINE --- */}
+        {/* Output line */}
         <line
-          className="output-line"
-          x1="600" /* match the curves' end x */
-          y1="610" /* match the curves' end y */
-          x2="3000" /* extend to the right edge */
+          x1="600"
+          y1="610"
+          x2="1800"
           y2="610"
           stroke="black"
           strokeWidth="2"
@@ -130,7 +79,7 @@ const ProcessOverview = () => {
         </text>
 
         {/* Text block */}
-        <foreignObject x="410" y="100" width="1000" height="500">
+        <foreignObject x="410" y="30" width="960" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "right", fontFamily: "Arial, sans-serif" }}

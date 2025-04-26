@@ -5,7 +5,7 @@ const TestimonialOverview = () => {
     <div className="w-full h-screen bg-white overflow-hidden">
       <svg viewBox="0 0 1200 600" className="w-full h-full">
         {/* Embedding HTML for styling consistency */}
-        <foreignObject x="0" y="0" width="1200" height="600">
+        <foreignObject x="20" y="0" width="1200" height="600">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{
@@ -21,8 +21,8 @@ const TestimonialOverview = () => {
               style={{
                 fontSize: "32px",
                 fontWeight: 700,
-                lineHeight: 1.2,
                 margin: 0,
+                marginBottom: "16px",
               }}
             >
               SNO helped us streamline our Invoice Processing at the right time

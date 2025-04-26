@@ -4,8 +4,25 @@ const ExtractOverview = () => {
   return (
     <div className="w-full h-full bg-white">
       <svg viewBox="0 0 1000 400" className="w-full h-full">
+        <line
+          x1="0"
+          y1="322"
+          x2="230"
+          y2="322"
+          stroke="black"
+          strokeWidth="1"
+        />
+        {/* 3D block image placeholder */}
+        <image
+          href="/design1.PNG"
+          x="60"
+          y="170"
+          width="280"
+          height="200"
+          preserveAspectRatio="xMidYMid meet"
+        />
         {/* Text overlay */}
-        <foreignObject x="20" y="60" width="960" height="360">
+        <foreignObject x="20" y="18" width="960" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
@@ -13,10 +30,10 @@ const ExtractOverview = () => {
             <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "14px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
               Extract
             </h3>
-            <p style={{ fontSize: "10px", lineHeight: 1.4, margin: "18px 0" }}>
+            <p style={{ fontSize: "10px", lineHeight: 1.2, margin: "-7px 0" }}>
               Intelligent AI instantly captures essential invoice information
               with accuracy.
               <br />
@@ -33,31 +50,21 @@ const ExtractOverview = () => {
           </div>
         </foreignObject>
 
-        {/* 3D block image placeholder */}
-        <image
-          href="/design1.PNG"
-          x="60"
-          y="210"
-          width="280"
-          height="200"
-          preserveAspectRatio="xMidYMid meet"
-        />
-
         {/* Curved flow-lines */}
         {[...Array(7)].map((_, i) => (
           <path
             key={i}
-            d={`M 250 340 C 300 ${290 + i * 20}, 700 ${290 + i * 20}, 780 ${
-              290 + i * 20
+            d={`M 260 317 C 370 ${250 + i * 20}, 750 ${250 + i * 20}, 780 ${
+              250 + i * 20
             }`}
             stroke="black"
-            strokeWidth="2"
+            strokeWidth="1"
             fill="none"
           />
         ))}
 
         {/* Right output box */}
-        <rect x="700" y="280" width="160" height="160" fill="black" />
+        <rect x="650" y="230" width="160" height="160" fill="black" />
         {[
           "Invoice Creator",
           "Invoice Date",
@@ -69,8 +76,8 @@ const ExtractOverview = () => {
         ].map((label, i) => (
           <text
             key={i}
-            x="860"
-            y={265 + i * 20}
+            x="730"
+            y={255 + i * 20}
             fontSize="10"
             fontFamily="Arial, sans-serif"
             fill="white"
@@ -80,10 +87,23 @@ const ExtractOverview = () => {
           </text>
         ))}
 
+        {/* --- 5 Output Lines from Right of Black Box --- */}
+        {[...Array(6)].map((_, i) => (
+          <line
+            key={`output-line-${i}`}
+            x1="810" // 650 + 160 = 810 (right edge of black box)
+            y1={260 + i * 20} // vertical spacing
+            x2="2000" // make them super long (into next page)
+            y2={250 + i * 20}
+            stroke="black"
+            strokeWidth="1"
+          />
+        ))}
+
         {/* Footnotes */}
         <text
           x="190"
-          y="420"
+          y="380"
           fontSize="10"
           fontFamily="Arial, sans-serif"
           fill="black"
@@ -92,8 +112,8 @@ const ExtractOverview = () => {
           Proprietary Vision LLM Models
         </text>
         <text
-          x="860"
-          y="415"
+          x="725"
+          y="400"
           fontSize="10"
           fontFamily="Arial, sans-serif"
           fill="black"

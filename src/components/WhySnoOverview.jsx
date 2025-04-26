@@ -5,7 +5,7 @@ const WhySnoOverview = () => {
     <div className="w-full h-full bg-white">
       <svg viewBox="0 0 1200 600" className="w-full h-full">
         {/* Text and layout via foreignObject for consistent styling */}
-        <foreignObject x="20" y="20" width="1160" height="560">
+        <foreignObject x="150" y="20" width="900" height="300">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{
@@ -23,9 +23,9 @@ const WhySnoOverview = () => {
             <h2
               style={{
                 fontSize: "32px",
-                fontWeight: 300,
+                fontWeight: 50,
                 margin: 0,
-                lineHeight: 1.2,
+                marginBottom: "16px",
               }}
             >
               Why SNO is your one-stop tool for invoice processing?
@@ -51,7 +51,7 @@ const WhySnoOverview = () => {
                 >
                   Frictionless Invoice Intake
                 </h3>
-                <p style={{ fontSize: "16px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "12px", lineHeight: 1.5, margin: 0 }}>
                   Fetch invoices from emails, cloud drives, and uploads with no
                   need for manual sorting.
                 </p>
@@ -68,7 +68,7 @@ const WhySnoOverview = () => {
                 >
                   Instant Processing
                 </h3>
-                <p style={{ fontSize: "16px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "12px", lineHeight: 1.5, margin: 0 }}>
                   Reduce turnaround time, accelerate approvals & keep up with
                   the AP workflows consistently.
                 </p>
@@ -85,7 +85,7 @@ const WhySnoOverview = () => {
                 >
                   Human-augmented layer
                 </h3>
-                <p style={{ fontSize: "16px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "12px", lineHeight: 1.5, margin: 0 }}>
                   Alongside automation, every invoice would be reviewed by
                   accounting experts within 24 hours.
                 </p>

@@ -5,7 +5,7 @@ const AdvantagesOverview = () => {
     <div className="w-full h-full bg-white overflow-hidden">
       <svg viewBox="0 0 1200 600" className="w-full h-full">
         {/* Embedded text via foreignObject */}
-        <foreignObject x="20" y="20" width="400" height="300">
+        <foreignObject x="210" y="100" width="400" height="500">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ fontFamily: "Arial, sans-serif" }}
@@ -13,27 +13,61 @@ const AdvantagesOverview = () => {
             <h2
               style={{
                 fontSize: "32px",
-                fontWeight: 700,
+                fontWeight: 50,
                 margin: 0,
                 marginBottom: "16px",
               }}
             >
               MultiLayered Advantages
             </h2>
-            <ul
+            <p
               style={{
                 fontSize: "18px",
                 lineHeight: 1.6,
-                paddingLeft: "20px",
-                margin: 0,
+                margin: "30px 0",
               }}
             >
-              <li>Effortlessly synchronize with existing systems</li>
-              <li>Adherence to compliance</li>
-              <li>Smart OCR Capabilities</li>
-              <li>Mobile App</li>
-              <li>Easy scalability</li>
-            </ul>
+              <p
+                style={{
+                  fontWeight: 700,
+                  margin: "20px 0",
+                }}
+              >
+                Effortlessly synchronize with existing systems
+              </p>
+              <p
+                style={{
+                  fontWeight: 700,
+                  margin: "20px 0",
+                }}
+              >
+                Adherence to compliance
+              </p>
+              <p
+                style={{
+                  fontWeight: 700,
+                  margin: "20px 0",
+                }}
+              >
+                Smart OCR Capabilities
+              </p>
+              <p
+                style={{
+                  fontWeight: 700,
+                  margin: "20px 0",
+                }}
+              >
+                Mobile App
+              </p>
+              <p
+                style={{
+                  fontWeight: 700,
+                  margin: "20px 0",
+                }}
+              >
+                Easy scalability
+              </p>
+            </p>
             <div style={{ marginTop: "24px" }}>
               <button
                 style={{
@@ -67,8 +101,8 @@ const AdvantagesOverview = () => {
           href="/design.PNG"
           x="650"
           y="100"
-          width="400"
-          height="400"
+          width="500"
+          height="500"
           preserveAspectRatio="xMidYMid meet"
         />
       </svg>

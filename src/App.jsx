@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       {/* Horizontal scroll for first four pages */}
-      <div className="flex w-full h-screen overflow-x-auto overflow-y-hidden">
+      <div className="flex w-full h-screen overflow-x-auto overflow-y-hidden scrollbar-hide">
         {/* Page 1: Process Overview */}
         <div className="flex-shrink-0 w-screen h-full">
           <ProcessOverview />

@@ -5,7 +5,7 @@ const VerifyOverview = () => {
     <div className="w-full h-full bg-white overflow-hidden flex items-center justify-center p-8">
       <svg viewBox="0 0 1000 400" className="w-full h-full">
         {/* Text Content */}
-        <foreignObject x="20" y="58" width="600" height="200">
+        <foreignObject x="20" y="18" width="900" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
@@ -13,10 +13,10 @@ const VerifyOverview = () => {
             <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "12px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
               Verify
             </h3>
-            <p style={{ fontSize: "10px", lineHeight: 1.4, margin: 0 }}>
+            <p style={{ fontSize: "10px", lineHeight: 1.2, margin: "-5px 0" }}>
               Ensuring data integrity through meticulous human review.
               <br />A dual-layer verification process complemented by
               human-augmented vetting, where the selected invoice details will
@@ -30,42 +30,106 @@ const VerifyOverview = () => {
         </foreignObject>
 
         {/* Horizontal lines input */}
-        {[...Array(5)].map((_, i) => (
+        {[...Array(6)].map((_, i) => (
           <line
             key={i}
-            x1={50}
-            y1={260 + i * 12}
-            x2={450}
-            y2={260 + i * 12}
+            x1={0}
+            y1={258.5 + i * 20}
+            x2={250}
+            y2={258.5 + i * 20}
             stroke="black"
-            strokeWidth="2"
+            strokeWidth="1"
           />
         ))}
 
         {/* 3D Panels: front (black), mid (gray), back (light gray) */}
-        <g transform="translate(450, 400)">
-          {/* Front panel */}
-          <polygon points="0,0 80,-160 150,-150 70,10" fill="black" />
-          {/* Mid panel */}
-          <polygon points="120,0 200,-160 270,-150 190,10" fill="#999" />
-          {/* Back panel */}
-          <polygon points="240,0 320,-160 390,-150 310,10" fill="#ccc" />
+        <g transform="translate(250, 390)">
+          {/* Front (Black) Panel */}
+          <polygon points="0,0 0,-170 70,-180 70,-10" fill="black" />
+          {/* Middle (Gray) Panel */}
+          <polygon points="140,0 140,-170 210,-180 210,-10" fill="#999" />
+          {/* Back (Light Gray) Panel */}
+          <polygon points="280,0 280,-170 350,-180 350,-10" fill="#ccc" />
+          <line
+            x1="0"
+            y1="-50"
+            x2="140"
+            y2="-50"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="0"
+            y1="-70"
+            x2="140"
+            y2="-70"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="0"
+            y1="-90"
+            x2="140"
+            y2="-90"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="0"
+            y1="-110"
+            x2="140"
+            y2="-110"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="210"
+            y1="-50"
+            x2="280"
+            y2="-50"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="210"
+            y1="-70"
+            x2="280"
+            y2="-70"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="210"
+            y1="-90"
+            x2="280"
+            y2="-90"
+            stroke="black"
+            strokeWidth="1"
+          />
+          <line
+            x1="210"
+            y1="-110"
+            x2="280"
+            y2="-110"
+            stroke="black"
+            strokeWidth="1"
+          />
         </g>
 
         {/* Output horizontal line */}
         <line
-          x1="460"
-          y1="260"
+          x1="600"
+          y1="310"
           x2="1000"
-          y2="260"
+          y2="310"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1"
         />
 
         {/* Panel labels */}
         <text
-          x="75"
-          y="300"
+          x="280"
+          y="400"
           fontSize="10"
           fontFamily="Arial, sans-serif"
           fill="black"
@@ -74,8 +138,8 @@ const VerifyOverview = () => {
           First Layer of Verification
         </text>
         <text
-          x="195"
-          y="300"
+          x="420"
+          y="400"
           fontSize="10"
           fontFamily="Arial, sans-serif"
           fill="black"
@@ -84,8 +148,8 @@ const VerifyOverview = () => {
           Second Layer of Verification
         </text>
         <text
-          x="315"
-          y="300"
+          x="570"
+          y="400"
           fontSize="10"
           fontFamily="Arial, sans-serif"
           fill="black"

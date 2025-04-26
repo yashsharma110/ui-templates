@@ -27,7 +27,7 @@ const AdvantagesPage = () => {
   return (
     <div className="w-full h-full bg-white">
       <svg viewBox="0 0 1200 800" className="w-full h-full">
-        <foreignObject x="20" y="20" width="1160" height="760">
+        <foreignObject x="20" y="20" width="700" height="860">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{
@@ -41,10 +41,10 @@ const AdvantagesPage = () => {
             {/* Header */}
             <h2
               style={{
-                fontSize: "32px",
-                fontWeight: 300,
+                fontSize: "45px",
+                fontWeight: 50,
                 margin: 0,
-                marginBottom: "32px",
+                marginBottom: "50px",
               }}
             >
               MultiLayered Advantages
