@@ -27,8 +27,8 @@ const ProcessOverview = () => {
           <path
             key={`line-${i}`}
             d={`M ${50 + i * 60} 30 C ${60 + i * 60} 700, ${
-              200 + i * 50
-            } 600, 500 610`}
+              300 + i * 50
+            } 600, 600 610`}
             stroke="black"
             strokeWidth="2"
             fill="none"
@@ -36,21 +36,21 @@ const ProcessOverview = () => {
         ))}
 
         {/* Funnel triangles */}
-        <polygon points="410,460 410,760 780,610" fill="black" />
-        <polygon points="460,460 460,760 800,610" fill="black" />
+        <polygon points="560,460 560,760 930,610" fill="black" />
+        <polygon points="610,460 610,760 950,610" fill="black" />
         <line
-          x1="460"
+          x1="610"
           y1="460"
-          x2="460"
+          x2="610"
           y2="760"
           stroke="white"
           strokeWidth="2"
         />
-        <polygon points="510,460 510,760 800,610" fill="black" />
+        <polygon points="660,460 660,760 950,610" fill="black" />
         <line
-          x1="510"
+          x1="660"
           y1="460"
-          x2="510"
+          x2="660"
           y2="760"
           stroke="white"
           strokeWidth="2"
@@ -58,7 +58,7 @@ const ProcessOverview = () => {
 
         {/* Output line */}
         <line
-          x1="600"
+          x1="700"
           y1="610"
           x2="1800"
           y2="610"
@@ -68,7 +68,7 @@ const ProcessOverview = () => {
 
         {/* Label */}
         <text
-          x="560"
+          x="680"
           y="780"
           fontSize="18"
           fontFamily="Arial, sans-serif"
@@ -102,17 +102,14 @@ const ProcessOverview = () => {
             >
               Collect
             </h3>
-            <p style={{ fontSize: "18px", lineHeight: "1.2" }}>
+            <p style={{ fontSize: "24px", lineHeight: "1.2" }}>
               Efficiently gather invoices from diverse channels and formats.
-              <br />
               Utilize robust automated data capture mechanisms to seamlessly
               collect invoices from various sources, including email
-              <br />
               attachments, cloud storage platforms, direct uploads, and scanned
-              documents. This ensures a centralized repository,
-              <br />
-              facilitating streamlined processing and reducing the risk of
-              misplaced or overlooked invoices.
+              documents. This ensures a centralized repository, facilitating
+              streamlined processing and reducing the risk of misplaced or
+              overlooked invoices.
             </p>
           </div>
         </foreignObject>

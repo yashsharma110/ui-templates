@@ -5,7 +5,7 @@ const VerifyOverview = () => {
     <div className="w-full h-full bg-white overflow-hidden flex items-center justify-center p-8">
       <svg viewBox="0 0 1000 400" className="w-full h-full">
         {/* Text Content */}
-        <foreignObject x="20" y="18" width="900" height="360">
+        <foreignObject x="20" y="10" width="900" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
@@ -16,15 +16,13 @@ const VerifyOverview = () => {
             <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
               Verify
             </h3>
-            <p style={{ fontSize: "10px", lineHeight: 1.2, margin: "-5px 0" }}>
+            <p style={{ fontSize: "14px", lineHeight: 1.2, margin: "-5px 0" }}>
               Ensuring data integrity through meticulous human review.
               <br />A dual-layer verification process complemented by
-              human-augmented vetting, where the selected invoice details will
-              <br />
-              be attested for accuracy, consistency & compliance with
-              organizational policies & regulatory standards, thereby
-              <br />
-              proving error-free output.
+              human-augmented vetting, where<br></br> the selected invoice
+              details will be attested for accuracy, consistency & compliance
+              with organizational<br></br> policies & regulatory standards,
+              thereby proving error-free output.
             </p>
           </div>
         </foreignObject>

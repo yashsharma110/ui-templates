@@ -16,9 +16,9 @@ const ExtractOverview = () => {
         <image
           href="/design1.PNG"
           x="60"
-          y="170"
+          y="186"
           width="280"
-          height="200"
+          height="180"
           preserveAspectRatio="xMidYMid meet"
         />
         {/* Text overlay */}
@@ -33,19 +33,15 @@ const ExtractOverview = () => {
             <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
               Extract
             </h3>
-            <p style={{ fontSize: "10px", lineHeight: 1.2, margin: "-7px 0" }}>
+            <p style={{ fontSize: "14px", lineHeight: 1.2, margin: "-7px 0" }}>
               Intelligent AI instantly captures essential invoice information
-              with accuracy.
-              <br />
-              Employ intelligent data extraction technologies to identify and
-              retrieve critical invoice data points such as invoice
-              <br />
-              number, date, vendor details, line items, quantities, and totals.
-              The extracted data is then structured into a <br />
-              standardized, tabular format, ensuring compatibility with
-              downstream financial systems and facilitating efficient
-              <br />
-              processing.
+              with accuracy. Employ intelligent data extraction technologies
+              <br></br> to identify and retrieve critical invoice data points
+              such as invoice number, date, vendor details, line items,
+              quantities, and totals.<br></br>The extracted data is then
+              structured into a standardized, tabular format, ensuring
+              compatibility with downstream financial systems<br></br> and
+              facilitating efficient processing.
             </p>
           </div>
         </foreignObject>
@@ -54,7 +50,7 @@ const ExtractOverview = () => {
         {[...Array(7)].map((_, i) => (
           <path
             key={i}
-            d={`M 260 317 C 370 ${250 + i * 20}, 750 ${250 + i * 20}, 780 ${
+            d={`M 250 319 C 390 ${250 + i * 20}, 750 ${250 + i * 20}, 750 ${
               250 + i * 20
             }`}
             stroke="black"

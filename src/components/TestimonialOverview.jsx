@@ -5,7 +5,7 @@ const TestimonialOverview = () => {
     <div className="w-full h-screen bg-white overflow-hidden">
       <svg viewBox="0 0 1200 600" className="w-full h-full">
         {/* Embedding HTML for styling consistency */}
-        <foreignObject x="20" y="0" width="1200" height="600">
+        <foreignObject x="0" y="0" width="1200" height="500">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{
@@ -13,7 +13,7 @@ const TestimonialOverview = () => {
               width: "100%",
               height: "100%",
               boxSizing: "border-box",
-              padding: "40px",
+              padding: "0",
             }}
           >
             {/* Heading */}
@@ -50,7 +50,7 @@ const TestimonialOverview = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <p style={{ fontSize: "16px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "24px", lineHeight: 1.5, margin: 0 }}>
                   While we were clocking 20K invoices a month & faced friction
                   in operations, their expertise not only helped save thousands
                   of dollars, but also brought down the manual headcount from 8
@@ -59,11 +59,25 @@ const TestimonialOverview = () => {
                 </p>
 
                 <div style={{ marginTop: "24px" }}>
-                  <p style={{ fontSize: "16px", fontWeight: 600, margin: 0 }}>
+                  <p style={{ fontSize: "20px", fontWeight: 600, margin: 0 }}>
                     Mr Hans
                   </p>
-                  <p style={{ fontSize: "14px", margin: "4px 0 0 0" }}>CEO</p>
-                  <p style={{ fontSize: "14px", margin: "4px 0 0 0" }}>
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      margin: "4px 0 0 0",
+                      fontWeight: 600,
+                    }}
+                  >
+                    CEO
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      margin: "4px 0 0 0",
+                      fontWeight: 600,
+                    }}
+                  >
                     Kontinue
                   </p>
                 </div>

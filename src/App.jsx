@@ -7,12 +7,17 @@ import AdvantagesOverview from "./components/AdvangesOverView";
 import Advantages from "./components/Advantages";
 import WhySnoOverview from "./components/WhySnoOverview";
 import TestimonialOverview from "./components/TestimonialOverview";
+import LandingPage from "./components/LandingPage";
+import AutoScrollSection from "./components/AutoScroll";
 
 function App() {
   return (
-    <>
+    <div className="px-[120px] py-[20px]">
+      <div className="w-full h-screen overflow-y-auto">
+        <LandingPage />
+      </div>
       {/* Horizontal scroll for first four pages */}
-      <div className="flex w-full h-screen overflow-x-auto overflow-y-hidden scrollbar-hide">
+      <AutoScrollSection pageCount={4}>
         {/* Page 1: Process Overview */}
         <div className="flex-shrink-0 w-screen h-full">
           <ProcessOverview />
@@ -32,22 +37,21 @@ function App() {
         <div className="flex-shrink-0 w-screen h-full">
           <DeliverOverview />
         </div>
-      </div>
-
+      </AutoScrollSection>
       {/* Vertical scroll for Advantages page */}
       <div className="w-full h-screen overflow-y-auto">
         <AdvantagesOverview />
       </div>
       {/* Another vertical section below Advantages */}
       <div className="w-full h-screen">
-        <Advantages />
+        {/* <Advantages /> */}
         <WhySnoOverview />
         <TestimonialOverview />
       </div>
       {/* <div className="w-full h-screen">
         <WhySnoOverview />
       </div> */}
-    </>
+    </div>
   );
 }
 
