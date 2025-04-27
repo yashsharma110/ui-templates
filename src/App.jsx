@@ -9,10 +9,12 @@ import WhySnoOverview from "./components/WhySnoOverview";
 import TestimonialOverview from "./components/TestimonialOverview";
 import LandingPage from "./components/LandingPage";
 import AutoScrollSection from "./components/AutoScroll";
-
+import Navbar from "./components/Navbar";
+import FrictionlessOverview from "./components/InvoiceHeroOverview";
 function App() {
   return (
-    <div className="px-[120px] py-[20px]">
+    <div className="px-[120px] pb-[20px]">
+      <Navbar />
       <div className="w-full h-screen overflow-y-auto">
         <LandingPage />
       </div>
@@ -47,6 +49,7 @@ function App() {
         {/* <Advantages /> */}
         <WhySnoOverview />
         <TestimonialOverview />
+        <FrictionlessOverview />
       </div>
       {/* <div className="w-full h-screen">
         <WhySnoOverview />

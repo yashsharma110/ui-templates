@@ -3,7 +3,7 @@ import React from "react";
 const TestimonialOverview = () => {
   return (
     <div className="w-full h-screen bg-white overflow-hidden">
-      <svg viewBox="0 0 1200 600" className="w-full h-full">
+      <svg viewBox="0 0 1200 400" className="w-full h-full">
         {/* Embedding HTML for styling consistency */}
         <foreignObject x="0" y="0" width="1200" height="500">
           <div

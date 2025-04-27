@@ -2,10 +2,10 @@ import React from "react";
 
 const WhySnoOverview = () => {
   return (
-    <div className="w-full h-[30%] bg-white">
-      <svg viewBox="0 0 1500 200" className="w-full h-full">
+    <div className="w-full h-[30%] bg-white overflow-hidden">
+      <svg viewBox="0 0 1300 300" className="w-full h-full">
         {/* Text and layout via foreignObject for consistent styling */}
-        <foreignObject x="0" y="0" width="1200" height="300">
+        <foreignObject x="0" y="0" width="100%" height="300">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
             style={{
@@ -14,7 +14,7 @@ const WhySnoOverview = () => {
               flexDirection: "column",
               gap: "32px",
               width: "100%",
-              height: "20%",
+              height: "100%",
               padding: "0",
             }}
           >
@@ -42,7 +42,7 @@ const WhySnoOverview = () => {
               <div>
                 <h3
                   style={{
-                    fontSize: "26px",
+                    fontSize: "28px",
                     fontWeight: 600,
                     margin: 0,
                     marginBottom: "8px",
@@ -50,7 +50,7 @@ const WhySnoOverview = () => {
                 >
                   Frictionless Invoice Intake
                 </h3>
-                <p style={{ fontSize: "20px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "23px", lineHeight: 1.5, margin: 0 }}>
                   Fetch invoices from emails, cloud drives, and uploads with no
                   need for manual sorting.
                 </p>
@@ -59,7 +59,7 @@ const WhySnoOverview = () => {
               <div>
                 <h3
                   style={{
-                    fontSize: "26px",
+                    fontSize: "28px",
                     fontWeight: 600,
                     margin: 0,
                     marginBottom: "8px",
@@ -67,7 +67,7 @@ const WhySnoOverview = () => {
                 >
                   Instant Processing
                 </h3>
-                <p style={{ fontSize: "20px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "23px", lineHeight: 1.5, margin: 0 }}>
                   Reduce turnaround time, accelerate approvals & keep up with
                   the AP workflows consistently.
                 </p>
@@ -76,7 +76,7 @@ const WhySnoOverview = () => {
               <div>
                 <h3
                   style={{
-                    fontSize: "26px",
+                    fontSize: "28px",
                     fontWeight: 600,
                     margin: 0,
                     marginBottom: "8px",
@@ -84,7 +84,7 @@ const WhySnoOverview = () => {
                 >
                   Human-augmented layer
                 </h3>
-                <p style={{ fontSize: "20px", lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: "23px", lineHeight: 1.5, margin: 0 }}>
                   Alongside automation, every invoice would be reviewed by
                   accounting experts within 24 hours.
                 </p>
