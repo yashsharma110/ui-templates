@@ -32,7 +32,7 @@ const LandingHero = () => {
               height: "100%",
               color: "white",
               fontFamily: "Arial, sans-serif",
-              padding: "0px 30px",
+              padding: "0px 70px",
             }}
           >
             <h1
@@ -58,7 +58,7 @@ const LandingHero = () => {
 
             <p
               style={{
-                fontSize: "32px",
+                fontSize: "26px",
                 color: "white",
                 marginTop: "20px",
                 maxWidth: "900px",
