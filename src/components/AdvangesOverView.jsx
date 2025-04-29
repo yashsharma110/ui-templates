@@ -2,110 +2,128 @@ import React from "react";
 
 const AdvantagesOverview = () => {
   return (
-    <div className="w-full h-full bg-white overflow-hidden">
-      <svg viewBox="0 0 1400 800" className="w-full h-full">
-        {/* Embedded text via foreignObject */}
-        <foreignObject x="0" y="100" width="1200" height="500">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
-            <h2
-              style={{
-                fontSize: "45px",
-                fontWeight: 50,
-                margin: 0,
-                marginBottom: "16px",
-              }}
-            >
-              MultiLayered Advantages
-            </h2>
-            <p
-              style={{
-                fontSize: "24px",
-                lineHeight: 1.6,
-                margin: "30px 0",
-              }}
-            >
-              <p
-                style={{
-                  fontWeight: 700,
-                  margin: "30px 0",
-                }}
-              >
-                Effortlessly synchronize with existing systems
-              </p>
-              <p
-                style={{
-                  fontWeight: 700,
-                  margin: "30px 0",
-                }}
-              >
-                Adherence to compliance
-              </p>
-              <p
-                style={{
-                  fontWeight: 700,
-                  margin: "30px 0",
-                }}
-              >
-                Smart OCR Capabilities
-              </p>
-              <p
-                style={{
-                  fontWeight: 700,
-                  margin: "30px 0",
-                }}
-              >
-                Mobile App
-              </p>
-              <p
-                style={{
-                  fontWeight: 700,
-                  margin: "30px 0",
-                }}
-              >
-                Easy scalability
-              </p>
-            </p>
-            <div style={{ marginTop: "50px" }}>
-              <button
-                style={{
-                  padding: "15px 25px",
-                  marginRight: "20px",
-                  backgroundColor: "black",
-                  color: "white",
-                  border: "none",
-                  fontSize: "20px",
-                }}
-              >
-                Contact Us
-              </button>
-              <button
-                style={{
-                  padding: "15px 25px",
-                  backgroundColor: "#ccc",
-                  color: "black",
-                  border: "none",
-                  fontSize: "20px",
-                }}
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </foreignObject>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh", // Ensure the height fills the viewport
+        backgroundColor: "white",
+        display: "flex",
+        flexDirection: "row", // Align content and image side by side
+        alignItems: "center", // Center the content vertically
+        justifyContent: "flex-start", // Start from the left
+        overflow: "hidden", // Prevent horizontal and vertical scrolling
+        boxSizing: "border-box",
+      }}
+    >
+      {/* Left side content */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "600px", // Limit the width of the content
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start", // Align content at the top
+          gap: "2rem",
+          overflow: "hidden", // Prevent horizontal and vertical scrolling
+        }}
+      >
+        {/* Heading */}
+        <h2
+          style={{
+            fontSize: "clamp(1.75rem, 3vw, 3.5rem)",
+            fontWeight: 600,
+            lineHeight: "1.2",
+            margin: "2rem 0 ",
+          }}
+        >
+          MultiLayered Advantages
+        </h2>
 
-        {/* Right Custom Design (replace href with your image path) */}
-        <image
-          href="/design.PNG"
-          x="550"
-          y="0"
-          width="700"
-          height="700"
-          preserveAspectRatio="xMidYMid meet"
+        {/* Advantage List */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "2.5rem",
+            overflow: "hidden", // Prevent scrolling within this section
+          }}
+        >
+          {[
+            "Effortlessly synchronize with existing systems",
+            "Adherence to compliance",
+            "Smart OCR Capabilities",
+            "Mobile App",
+            "Easy scalability",
+          ].map((advantage, index) => (
+            <p
+              key={index}
+              style={{
+                fontSize: "clamp(1.25rem, 2vw, 2rem)",
+                fontWeight: "bold",
+                margin: 0,
+              }}
+            >
+              {advantage}
+            </p>
+          ))}
+        </div>
+
+        {/* Buttons */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "1.25rem",
+            marginTop: "2rem",
+          }}
+        >
+          <button
+            style={{
+              padding: "1rem 2rem",
+              backgroundColor: "black",
+              color: "white",
+              border: "none",
+              fontSize: "clamp(1rem, 2vw, 1.25rem)",
+              cursor: "pointer",
+            }}
+          >
+            Contact Us
+          </button>
+          <button
+            style={{
+              padding: "1rem 2rem",
+              backgroundColor: "#e0e0e0",
+              color: "black",
+              border: "none",
+              fontSize: "clamp(1rem, 2vw, 1.25rem)",
+              cursor: "pointer",
+            }}
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      {/* Right side image */}
+      <div
+        style={{
+          width: "50%",
+          maxWidth: "600px", // Limit the width of the image
+          marginTop: "0", // Adjust the margin to align the image with the content
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src="/design.PNG"
+          alt="Design illustration"
+          style={{
+            width: "100%", // Ensure image scales within its container
+            height: "auto",
+            objectFit: "contain",
+          }}
         />
-      </svg>
+      </div>
     </div>
   );
 };

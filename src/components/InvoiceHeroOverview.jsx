@@ -2,103 +2,125 @@ import React from "react";
 
 const LandingHero = () => {
   return (
-    <div className="w-full h-screen overflow-hidden bg-black relative">
-      <svg viewBox="0 0 1100 900" className="w-full h-full">
-        {/* --- Black background --- */}
-        <rect width="1200" height="800" fill="black" />
+    <div
+      style={{
+        width: "100%",
+        minHeight: "90vh",
+        overflow: "hidden",
+        backgroundColor: "black",
+        position: "relative",
+        display: "flex",
+        alignItems: "flex-start", // <-- move content towards top
+        justifyContent: "center",
+        padding: "8% 5% 0", // <-- top padding increased
+        boxSizing: "border-box",
+      }}
+    >
+      {/* Blurry Blob 1 */}
+      <div
+        style={{
+          position: "absolute",
+          top: "80%",
+          left: "50%",
+          width: "300px",
+          height: "300px",
+          backgroundColor: "white",
+          borderRadius: "50%",
+          filter: "blur(80px)",
+          opacity: 0.5,
+          transform: "translate(-50%, -50%)",
+        }}
+      ></div>
 
-        {/* --- Blurry Blobs --- */}
-        <circle cx="550" cy="450" r="150" fill="white" filter="url(#blur1)" />
-        <circle cx="850" cy="650" r="80" fill="white" filter="url(#blur2)" />
+      {/* Blurry Blob 2 */}
+      <div
+        style={{
+          position: "absolute",
+          top: "95%",
+          left: "80%",
+          width: "160px",
+          height: "160px",
+          backgroundColor: "white",
+          borderRadius: "50%",
+          filter: "blur(40px)",
+          opacity: 0.5,
+          transform: "translate(-50%, -50%)",
+        }}
+      ></div>
 
-        {/* --- Blur Filters --- */}
-        <defs>
-          <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
-          </filter>
-          <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
-          </filter>
-        </defs>
-
-        {/* --- Text and Buttons inside foreignObject --- */}
-        <foreignObject x="0" y="0" width="1300" height="400">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
+      {/* Main Content */}
+      <div
+        style={{
+          position: "relative",
+          color: "white",
+          fontFamily: "Arial, sans-serif",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          maxWidth: "1000px",
+          width: "100%",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "clamp(2rem, 5vw, 3rem)",
+            fontWeight: "bold",
+            lineHeight: 1.3,
+            margin: 0,
+          }}
+        >
+          Experience a{" "}
+          <span
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              height: "100%",
-              color: "white",
-              fontFamily: "Arial, sans-serif",
-              padding: "0px 70px",
+              fontStyle: "italic",
+              fontWeight: "normal",
+              color: "#ccc",
             }}
           >
-            <h1
-              style={{
-                fontSize: "36px",
-                fontWeight: "bold",
-                lineHeight: "1.4",
-                maxWidth: "900px",
-              }}
-            >
-              Experience a{" "}
-              <span
-                style={{
-                  fontStyle: "italic",
-                  fontWeight: "normal",
-                  color: "#ccc",
-                }}
-              >
-                frictionless
-              </span>{" "}
-              future of finance operations
-            </h1>
+            frictionless
+          </span>{" "}
+          future of finance operations
+        </h1>
 
-            <p
-              style={{
-                fontSize: "26px",
-                color: "white",
-                marginTop: "20px",
-                maxWidth: "900px",
-                lineHeight: "1.5",
-              }}
-            >
-              An Invoice processor built for speed, precision and reimagined
-              without bottlenecks
-            </p>
+        <p
+          style={{
+            fontSize: "clamp(1.25rem, 3vw, 1.75rem)",
+            marginTop: "20px",
+            lineHeight: 1.5,
+            color: "white",
+          }}
+        >
+          An Invoice processor built for speed, precision and reimagined without
+          bottlenecks
+        </p>
 
-            <div style={{ marginTop: "30px" }}>
-              <button
-                style={{
-                  padding: "12px 20px",
-                  marginRight: "20px",
-                  backgroundColor: "#ccc",
-                  color: "#fff",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: "18px",
-                }}
-              >
-                Contact Us
-              </button>
-              <button
-                style={{
-                  padding: "12px 20px",
-                  backgroundColor: "white",
-                  color: "#000",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: "18px",
-                }}
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </foreignObject>
-      </svg>
+        <div style={{ marginTop: "30px", display: "flex", gap: "20px" }}>
+          <button
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "#ccc",
+              color: "#000",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+            }}
+          >
+            Contact Us
+          </button>
+          <button
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "white",
+              color: "#000",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+            }}
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

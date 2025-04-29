@@ -2,90 +2,129 @@ import React from "react";
 
 const TestimonialOverview = () => {
   return (
-    <div className="w-full h-screen bg-white overflow-hidden">
-      <svg viewBox="0 0 1200 400" className="w-full h-full">
-        {/* Embedding HTML for styling consistency */}
-        <foreignObject x="0" y="0" width="1200" height="500">
+    <div
+      style={{
+        width: "100%",
+        minHeight: "100vh",
+        backgroundColor: "white",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "start",
+        justifyContent: "start",
+        boxSizing: "border-box",
+      }}
+    >
+      {/* Heading */}
+      <h2
+        style={{
+          fontSize: "clamp(2rem, 5vw, 2.5rem)",
+          fontWeight: 700,
+          textAlign: "start",
+          maxWidth: "1200px",
+          lineHeight: 1.3,
+          margin: 0,
+        }}
+      >
+        SNO helped us streamline our Invoice Processing at the right time
+      </h2>
+
+      {/* Content Row */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "32px",
+          marginTop: "48px",
+          width: "100%",
+          maxWidth: "1100px",
+          boxSizing: "border-box",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "32px",
+          }}
+        >
+          {/* For large screens flex row */}
           <div
-            xmlns="http://www.w3.org/1999/xhtml"
             style={{
-              fontFamily: "Arial, sans-serif",
-              width: "100%",
-              height: "100%",
-              boxSizing: "border-box",
-              padding: "0",
+              display: "flex",
+              flexDirection: window.innerWidth >= 768 ? "row" : "column",
+              gap: "32px",
             }}
           >
-            {/* Heading */}
-            <h2
+            {/* Left: Black Box */}
+            <div
               style={{
-                fontSize: "32px",
-                fontWeight: 700,
-                margin: 0,
-                marginBottom: "16px",
+                flex: 1,
+                backgroundColor: "black",
+                width: "100%",
+                aspectRatio: "16 / 9",
+              }}
+            />
+
+            {/* Right: Testimonial Box */}
+            <div
+              style={{
+                flex: 1,
+                backgroundColor: "#f3f3f3",
+                padding: "24px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
               }}
             >
-              SNO helped us streamline our Invoice Processing at the right time
-            </h2>
-
-            {/* Content Row */}
-            <div style={{ display: "flex", marginTop: "40px", gap: "40px" }}>
-              {/* Left placeholder */}
-              <div
+              <p
                 style={{
-                  flex: 1,
-                  backgroundColor: "black",
-                  aspectRatio: "16/9",
-                }}
-              />
-
-              {/* Right panel */}
-              <div
-                style={{
-                  flex: 1,
-                  backgroundColor: "#f3f3f3",
-                  padding: "24px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
+                  fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+                  lineHeight: 1.6,
+                  margin: 0,
                 }}
               >
-                <p style={{ fontSize: "24px", lineHeight: 1.5, margin: 0 }}>
-                  While we were clocking 20K invoices a month & faced friction
-                  in operations, their expertise not only helped save thousands
-                  of dollars, but also brought down the manual headcount from 8
-                  to just 1 & cut time required by 88%, which was a huge boost
-                  for us.
-                </p>
+                While we were clocking 20K invoices a month & faced friction in
+                operations, their expertise not only helped save thousands of
+                dollars, but also brought down the manual headcount from 8 to
+                just 1 & cut time required by 88%, which was a huge boost for
+                us.
+              </p>
 
-                <div style={{ marginTop: "24px" }}>
-                  <p style={{ fontSize: "20px", fontWeight: 600, margin: 0 }}>
-                    Mr Hans
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "18px",
-                      margin: "4px 0 0 0",
-                      fontWeight: 600,
-                    }}
-                  >
-                    CEO
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "18px",
-                      margin: "4px 0 0 0",
-                      fontWeight: 600,
-                    }}
-                  >
-                    Kontinue
-                  </p>
-                </div>
+              {/* Author Info */}
+              <div style={{ marginTop: "24px" }}>
+                <p
+                  style={{
+                    fontSize: "clamp(1.125rem, 2.5vw, 1.5rem)",
+                    fontWeight: 600,
+                    margin: 0,
+                  }}
+                >
+                  Mr Hans
+                </p>
+                <p
+                  style={{
+                    fontSize: "clamp(1rem, 2vw, 1.25rem)",
+                    fontWeight: 600,
+                    margin: "4px 0 0 0",
+                  }}
+                >
+                  CEO
+                </p>
+                <p
+                  style={{
+                    fontSize: "clamp(1rem, 2vw, 1.25rem)",
+                    fontWeight: 600,
+                    margin: "4px 0 0 0",
+                  }}
+                >
+                  Kontinue
+                </p>
               </div>
             </div>
           </div>
-        </foreignObject>
-      </svg>
+        </div>
+      </div>
     </div>
   );
 };
