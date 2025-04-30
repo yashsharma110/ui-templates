@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Logo with Image */}
         <div style={{ display: "flex", alignItems: "center", gap: "0" }}>
           <img
-            src="./../public/designNav.PNG" // Replace with the correct path to your image
+            src="/designNav.PNG" // Replace with the correct path to your image
             alt="Logo"
             style={{ width: "40px", height: "40px" }} // Adjust size as needed
           />

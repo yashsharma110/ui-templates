@@ -26,8 +26,7 @@ const ContactForm = () => {
       </h1>
       <p
         style={{
-          marginBottom: "24px",
-          fontSize: "1.1rem",
+          fontSize: "1.44rem",
           color: "#333",
           fontFamily: "Arial, sans-serif",
         }}
@@ -61,7 +60,7 @@ const ContactForm = () => {
       {/* Right Image */}
       <div style={{ flex: "1 1 300px", textAlign: "center" }}>
         <img
-          src="./../public/design2.PNG"
+          src="/design2.PNG"
           alt="Contact illustration"
           style={{ maxWidth: "100%", height: "auto" }}
         />
