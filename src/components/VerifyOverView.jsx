@@ -3,7 +3,7 @@ import React from "react";
 const VerifyOverview = () => {
   return (
     <div className="w-full h-full bg-white overflow-hidden flex items-center justify-center p-8">
-      <svg viewBox="0 0 1000 400" className="w-full h-full">
+      <svg viewBox="20 0 1000 400" className="w-full h-full">
         {/* Text Content */}
         <foreignObject x="20" y="10" width="900" height="360">
           <div
@@ -118,7 +118,7 @@ const VerifyOverview = () => {
         <line
           x1="600"
           y1="310"
-          x2="1000"
+          x2="1050"
           y2="310"
           stroke="black"
           strokeWidth="1"

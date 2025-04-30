@@ -4,7 +4,7 @@ const ProcessOverview = () => {
   return (
     <div className="w-full h-full bg-white">
       <svg
-        viewBox="0 0 1800 780"
+        viewBox="30 0 1800 780"
         className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
       >
@@ -60,7 +60,7 @@ const ProcessOverview = () => {
         <line
           x1="700"
           y1="610"
-          x2="1800"
+          x2="1850"
           y2="610"
           stroke="black"
           strokeWidth="2"

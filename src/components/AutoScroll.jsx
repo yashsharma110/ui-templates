@@ -86,7 +86,7 @@ const AutoScrollSection = ({ pageCount = 4, children }) => {
       ref={containerRef}
       className={`
         flex w-full h-screen
-        ${autoDone ? "overflow-x-auto" : "overflow-x-hidden"}
+        overflow-x-hidden
         overflow-y-hidden scrollbar-hide
       `}
     >

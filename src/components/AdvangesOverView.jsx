@@ -13,7 +13,8 @@ const AdvantagesOverview = () => {
         justifyContent: "flex-start", // Start from the left
         overflow: "hidden", // Prevent horizontal and vertical scrolling
         boxSizing: "border-box",
-      }}
+        fontFamily: "Arial, sans-serif",
+        }}
     >
       {/* Left side content */}
       <div
@@ -23,17 +24,16 @@ const AdvantagesOverview = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-start", // Align content at the top
-          gap: "2rem",
+          gap: "30px",
           overflow: "hidden", // Prevent horizontal and vertical scrolling
         }}
       >
         {/* Heading */}
         <h2
           style={{
-            fontSize: "clamp(1.75rem, 3vw, 3.5rem)",
-            fontWeight: 600,
+            fontSize: "clamp(2.074rem, 3vw, 2.074rem)",
+            fontWeight: 100,
             lineHeight: "1.2",
-            margin: "2rem 0 ",
           }}
         >
           MultiLayered Advantages
@@ -44,7 +44,7 @@ const AdvantagesOverview = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "2.5rem",
+            gap: "54px",
             overflow: "hidden", // Prevent scrolling within this section
           }}
         >
@@ -58,8 +58,8 @@ const AdvantagesOverview = () => {
             <p
               key={index}
               style={{
-                fontSize: "clamp(1.25rem, 2vw, 2rem)",
-                fontWeight: "bold",
+                fontSize: "clamp(1.440rem, 2vw, 1.440rem)",
+                fontWeight: "1000",
                 margin: 0,
               }}
             >
@@ -73,8 +73,8 @@ const AdvantagesOverview = () => {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            gap: "1.25rem",
-            marginTop: "2rem",
+            gap: "20px",
+            marginTop: "30px",
           }}
         >
           <button
@@ -83,7 +83,7 @@ const AdvantagesOverview = () => {
               backgroundColor: "black",
               color: "white",
               border: "none",
-              fontSize: "clamp(1rem, 2vw, 1.25rem)",
+              fontSize: "1.2rem",
               cursor: "pointer",
             }}
           >
@@ -95,11 +95,11 @@ const AdvantagesOverview = () => {
               backgroundColor: "#e0e0e0",
               color: "black",
               border: "none",
-              fontSize: "clamp(1rem, 2vw, 1.25rem)",
+              fontSize: "1.2rem",
               cursor: "pointer",
             }}
           >
-            Learn More
+            Contact Us
           </button>
         </div>
       </div>

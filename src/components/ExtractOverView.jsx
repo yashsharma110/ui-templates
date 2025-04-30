@@ -3,7 +3,7 @@ import React from "react";
 const ExtractOverview = () => {
   return (
     <div className="w-full h-full bg-white">
-      <svg viewBox="0 0 1000 400" className="w-full h-full">
+      <svg viewBox="20 0 1000 400" className="w-full h-full">
         <line
           x1="0"
           y1="322"

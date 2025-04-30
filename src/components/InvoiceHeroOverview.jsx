@@ -5,7 +5,7 @@ const LandingHero = () => {
     <div
       style={{
         width: "100%",
-        minHeight: "90vh",
+        height: "100vh",
         overflow: "hidden",
         backgroundColor: "black",
         position: "relative",
@@ -14,6 +14,7 @@ const LandingHero = () => {
         justifyContent: "center",
         padding: "8% 5% 0", // <-- top padding increased
         boxSizing: "border-box",
+        fontFamily: "Arial, sans-serif",
       }}
     >
       {/* Blurry Blob 1 */}
@@ -21,7 +22,7 @@ const LandingHero = () => {
         style={{
           position: "absolute",
           top: "80%",
-          left: "50%",
+          left: "55%",
           width: "300px",
           height: "300px",
           backgroundColor: "white",
@@ -36,7 +37,7 @@ const LandingHero = () => {
       <div
         style={{
           position: "absolute",
-          top: "95%",
+          top: "100%",
           left: "80%",
           width: "160px",
           height: "160px",
@@ -63,8 +64,8 @@ const LandingHero = () => {
       >
         <h1
           style={{
-            fontSize: "clamp(2rem, 5vw, 3rem)",
-            fontWeight: "bold",
+            fontSize: "clamp(2.448rem, 5vw, 2.448rem)",
+            fontWeight: "1000",
             lineHeight: 1.3,
             margin: 0,
           }}
@@ -84,40 +85,43 @@ const LandingHero = () => {
 
         <p
           style={{
-            fontSize: "clamp(1.25rem, 3vw, 1.75rem)",
-            marginTop: "20px",
+            fontSize: "clamp(1.728rem, 3vw, 1.728rem)",
+            marginTop: "54px",
             lineHeight: 1.5,
             color: "white",
+            fontFamily: "Arial, sans-serif",
           }}
         >
           An Invoice processor built for speed, precision and reimagined without
           bottlenecks
         </p>
 
-        <div style={{ marginTop: "30px", display: "flex", gap: "20px" }}>
+        <div style={{ marginTop: "54px", display: "flex", gap: "20px" }}>
           <button
             style={{
-              padding: "12px 24px",
+              padding: "1rem 2rem",
               backgroundColor: "#ccc",
               color: "#000",
+              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
               border: "none",
               cursor: "pointer",
-              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+              fontSize: "1.2rem",
             }}
           >
             Contact Us
           </button>
           <button
             style={{
-              padding: "12px 24px",
+              padding: "1rem 2rem",
               backgroundColor: "white",
               color: "#000",
+              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
               border: "none",
               cursor: "pointer",
-              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+              fontSize: "1.2rem",
             }}
           >
-            Learn More
+            Contact Us
           </button>
         </div>
       </div>
