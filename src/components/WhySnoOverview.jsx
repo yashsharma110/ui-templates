@@ -10,14 +10,14 @@ const WhySnoOverview = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "start",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
       }}
     >
       {/* Heading */}
       <h2
         style={{
-          fontSize: "clamp(2.488rem, 3vw, 2.488rem)",
-          fontWeight: 100,
+          fontSize: "2.078rem",
+          fontWeight: 400,
           textAlign: "start",
           marginBottom: "54px",
           lineHeight: 1.2,
@@ -32,24 +32,24 @@ const WhySnoOverview = () => {
           width: "100%",
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "2.5rem",
+          gap: "115px",
         }}
       >
         {/* Card 1 */}
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h3
             style={{
-              fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-              fontWeight: 1000,
-              marginBottom: "1rem",
+              fontSize: "1.728rem",
+              fontWeight: 900,
+              marginBottom: "32px",
             }}
           >
             Frictionless Invoice Intake
           </h3>
           <p
             style={{
-              fontSize: "clamp(1.2rem, 2vw, 1.2rem)",
-              lineHeight: 1.2,
+              fontSize: "1.2rem",
+              lineHeight: 1.17,
             }}
           >
             Fetch invoices from emails, cloud drives, and uploads with no need
@@ -61,17 +61,17 @@ const WhySnoOverview = () => {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h3
             style={{
-              fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-              fontWeight: 1000,
-              marginBottom: "1rem",
+              fontSize: "1.728rem",
+              fontWeight: 900,
+              marginBottom: "32px",
             }}
           >
             Instant Processing
           </h3>
           <p
             style={{
-              fontSize: "clamp(1.2rem, 2vw, 1.2rem)",
-              lineHeight: 1.2,
+              fontSize: "1.2rem",
+              lineHeight: 1.17,
             }}
           >
             Reduce turnaround time, accelerate approvals & keep up with the AP
@@ -83,17 +83,17 @@ const WhySnoOverview = () => {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h3
             style={{
-              fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-              fontWeight: 1000,
-              marginBottom: "1rem",
+              fontSize: "1.728rem",
+              fontWeight: 900,
+              marginBottom: "32px",
             }}
           >
             Human-augmented Layer
           </h3>
           <p
             style={{
-              fontSize: "clamp(1.2rem, 2vw, 1.2rem)",
-              lineHeight: 1.2,
+              fontSize: "1.2rem",
+              lineHeight: 1.17,
             }}
           >
             Alongside automation, every invoice would be reviewed by accounting

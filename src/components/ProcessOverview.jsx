@@ -71,7 +71,7 @@ const ProcessOverview = () => {
           x="680"
           y="780"
           fontSize="18"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >
@@ -82,12 +82,12 @@ const ProcessOverview = () => {
         <foreignObject x="410" y="30" width="960" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
-            style={{ textAlign: "right", fontFamily: "Arial, sans-serif" }}
+            style={{ textAlign: "right", fontFamily: "Satoshi" }}
           >
             <h2
               style={{
                 fontSize: "45px",
-                fontWeight: "300",
+                fontWeight: "400",
                 marginBottom: "16px",
               }}
             >
@@ -96,13 +96,15 @@ const ProcessOverview = () => {
             <h3
               style={{
                 fontSize: "36px",
-                fontWeight: "800",
+                fontWeight: "900",
                 marginBottom: "30px",
               }}
             >
               Collect
             </h3>
-            <p style={{ fontSize: "24px", lineHeight: "1.2" }}>
+            <p
+              style={{ fontSize: "24px", lineHeight: "1.2", fontWeight: "400" }}
+            >
               Efficiently gather invoices from diverse channels and formats.
               Utilize robust automated data capture mechanisms to seamlessly
               collect invoices from various sources, including email

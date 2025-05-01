@@ -25,15 +25,15 @@ const ExtractOverview = () => {
         <foreignObject x="20" y="18" width="960" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
-            style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
+            style={{ textAlign: "left", fontFamily: "Satoshi" }}
           >
-            <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
+            <h2 style={{ fontSize: "24px", fontWeight: 400, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 900, margin: "23px 0" }}>
               Extract
             </h3>
-            <p style={{ fontSize: "14px", lineHeight: 1.2, margin: "-7px 0" }}>
+            <p style={{ fontSize: "14px", lineHeight: 1.2, margin: "-7px 0", fontWeight: 400 }}>
               Intelligent AI instantly captures essential invoice information
               with accuracy. Employ intelligent data extraction technologies
               <br></br> to identify and retrieve critical invoice data points
@@ -75,7 +75,7 @@ const ExtractOverview = () => {
             x="730"
             y={255 + i * 20}
             fontSize="10"
-            fontFamily="Arial, sans-serif"
+            fontFamily="Satoshi"
             fill="white"
             textAnchor="middle"
           >
@@ -101,7 +101,7 @@ const ExtractOverview = () => {
           x="190"
           y="380"
           fontSize="10"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >
@@ -111,7 +111,7 @@ const ExtractOverview = () => {
           x="725"
           y="400"
           fontSize="10"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >

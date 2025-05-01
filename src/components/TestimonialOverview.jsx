@@ -12,18 +12,16 @@ const TestimonialOverview = () => {
         flexDirection: "column",
         alignItems: "start",
         justifyContent: "start",
-        boxSizing: "border-box",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
       }}
     >
       {/* Heading */}
       <h2
         style={{
-          fontSize: "clamp(2.448rem, 3vw, 2.448rem)",
-          fontWeight: 700,
+          fontSize: "2.986rem",
+          fontWeight: 900,
           textAlign: "start",
-          maxWidth: "1200px",
-          lineHeight: 1.3,
+          lineHeight: 1.36,
           margin: 0,
         }}
       >
@@ -37,7 +35,7 @@ const TestimonialOverview = () => {
           flexDirection: "column",
           marginTop: "54px",
           width: "100%",
-          maxWidth: "1100px",
+          maxWidth: "1200px",
           boxSizing: "border-box",
         }}
       >
@@ -71,16 +69,18 @@ const TestimonialOverview = () => {
               style={{
                 flex: 1,
                 backgroundColor: "#f3f3f3",
-                padding: "24px",
+                padding: "2px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                width: "590px",
+                height: "494px",
               }}
             >
               <p
                 style={{
-                  fontSize: "clamp(1.44rem, 2vw, 1.44rem)",
-                  lineHeight: 1.5,
+                  fontSize: "2.074rem",
+                  lineHeight: 1.2,
                   margin: 0,
                 }}
               >
@@ -92,11 +92,11 @@ const TestimonialOverview = () => {
               </p>
 
               {/* Author Info */}
-              <div style={{ marginTop: "16px" }}>
+              <div style={{ marginTop: "1px" }}>
                 <p
                   style={{
-                    fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-                    fontWeight: 600,
+                    fontSize: "2.074rem",
+                    fontWeight: 700,
                     margin: 0,
                   }}
                 >
@@ -104,18 +104,18 @@ const TestimonialOverview = () => {
                 </p>
                 <p
                   style={{
-                    fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-                    fontWeight: 600,
-                    margin: "16px 0 0 0",
+                    fontSize: "2.074rem",
+                    fontWeight: 700,
+                    margin: "10px 0 0 0",
                   }}
                 >
                   CEO
                 </p>
                 <p
                   style={{
-                    fontSize: "clamp(1.448rem, 2vw, 1.448rem)",
-                    fontWeight: 600,
-                    margin: "16px 0 0 0",
+                    fontSize: "2.074rem",
+                    fontWeight: 700,
+                    margin: "10px 0 0 0",
                   }}
                 >
                   Kontinue

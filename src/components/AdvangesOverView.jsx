@@ -13,14 +13,14 @@ const AdvantagesOverview = () => {
         justifyContent: "flex-start", // Start from the left
         overflow: "hidden", // Prevent horizontal and vertical scrolling
         boxSizing: "border-box",
-        fontFamily: "Arial, sans-serif",
-        }}
+        fontFamily: "Satoshi",
+      }}
     >
       {/* Left side content */}
       <div
         style={{
           width: "100%",
-          maxWidth: "600px", // Limit the width of the content
+          maxWidth: "700px", // Limit the width of the content
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-start", // Align content at the top
@@ -31,9 +31,9 @@ const AdvantagesOverview = () => {
         {/* Heading */}
         <h2
           style={{
-            fontSize: "clamp(2.074rem, 3vw, 2.074rem)",
-            fontWeight: 100,
-            lineHeight: "1.2",
+            fontSize: "2.074rem",
+            fontWeight: 400,
+            lineHeight: "auto",
           }}
         >
           MultiLayered Advantages
@@ -58,8 +58,8 @@ const AdvantagesOverview = () => {
             <p
               key={index}
               style={{
-                fontSize: "clamp(1.440rem, 2vw, 1.440rem)",
-                fontWeight: "1000",
+                fontSize: "1.728rem",
+                fontWeight: "900",
                 margin: 0,
               }}
             >
@@ -73,18 +73,22 @@ const AdvantagesOverview = () => {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            gap: "20px",
-            marginTop: "30px",
+            gap: "16px",
+            marginTop: "20px",
           }}
         >
           <button
             style={{
               padding: "1rem 1.5rem",
-              backgroundColor: "black",
-              color: "white",
+              backgroundColor: "#000",
+              color: "#fff",
               border: "none",
-              fontSize: "1.2rem",
               cursor: "pointer",
+              fontSize: "1rem",
+              width: "137px",
+              height: "57px",
+              fontFamily: "Satoshi",
+              lineHeight: 1.37,
             }}
           >
             Contact Us
@@ -92,11 +96,15 @@ const AdvantagesOverview = () => {
           <button
             style={{
               padding: "1rem 1.5rem",
-              backgroundColor: "#e0e0e0",
-              color: "black",
+              backgroundColor: "#ccc",
+              color: "#000",
               border: "none",
-              fontSize: "1.2rem",
               cursor: "pointer",
+              fontSize: "1rem",
+              width: "137px",
+              height: "57px",
+              fontFamily: "Satoshi",
+              lineHeight: 1.37,
             }}
           >
             Contact Us

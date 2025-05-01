@@ -4,17 +4,18 @@ const LandingHero = () => {
   return (
     <div
       style={{
-        width: "100%",
+        width: "123%",
         height: "100vh",
         overflow: "hidden",
         backgroundColor: "black",
         position: "relative",
         display: "flex",
-        alignItems: "flex-start", // <-- move content towards top
-        justifyContent: "center",
-        padding: "8% 5% 0", // <-- top padding increased
+        alignItems: "start", // <-- move content towards top
+        justifyContent: "start",
+        padding: "120px 130px", // <-- top padding increased
         boxSizing: "border-box",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
+        marginLeft: "-130px",
       }}
     >
       {/* Blurry Blob 1 */}
@@ -54,7 +55,7 @@ const LandingHero = () => {
         style={{
           position: "relative",
           color: "white",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -64,9 +65,9 @@ const LandingHero = () => {
       >
         <h1
           style={{
-            fontSize: "clamp(2.448rem, 5vw, 2.448rem)",
+            fontSize: "2.986rem",
             fontWeight: "1000",
-            lineHeight: 1.3,
+            lineHeight: "auto",
             margin: 0,
           }}
         >
@@ -85,27 +86,30 @@ const LandingHero = () => {
 
         <p
           style={{
-            fontSize: "clamp(1.728rem, 3vw, 1.728rem)",
+            fontSize: "2.488rem",
             marginTop: "54px",
-            lineHeight: 1.5,
+            lineHeight: "auto",
             color: "white",
-            fontFamily: "Arial, sans-serif",
+            fontFamily: "Satoshi",
           }}
         >
           An Invoice processor built for speed, precision and reimagined without
           bottlenecks
         </p>
 
-        <div style={{ marginTop: "54px", display: "flex", gap: "20px" }}>
+        <div style={{ marginTop: "54px", display: "flex", gap: "16px" }}>
           <button
             style={{
               padding: "1rem 1.5rem",
               backgroundColor: "#ccc",
               color: "#000",
-              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
               border: "none",
               cursor: "pointer",
-              fontSize: "1.2rem",
+              fontSize: "1rem",
+              width: "137px",
+              height: "57px",
+              fontFamily: "Satoshi",
+              lineHeight: 1.37,
             }}
           >
             Contact Us
@@ -113,12 +117,15 @@ const LandingHero = () => {
           <button
             style={{
               padding: "1rem 1.5rem",
-              backgroundColor: "white",
+              backgroundColor: "#fff",
               color: "#000",
-              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
               border: "none",
               cursor: "pointer",
-              fontSize: "1.2rem",
+              fontSize: "1rem",
+              width: "137px",
+              height: "57px",
+              fontFamily: "Satoshi",
+              lineHeight: 1.37,
             }}
           >
             Contact Us

@@ -10,7 +10,7 @@ const LandingOverview = () => {
         display: "flex",
         flexDirection: "column",
         boxSizing: "border-box",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
         padding: "120px 0 0 0",
       }}
     >
@@ -21,21 +21,21 @@ const LandingOverview = () => {
           flexWrap: "wrap",
           width: "100%",
           minHeight: "363px",
-          gap: "20px",
         }}
       >
         {/* Left Content */}
         <div
           style={{
             flex: "0 0 50%",
-            boxSizing: "border-box",
+            width: "590px",
+            height: "363px",
           }}
         >
           <h1
             style={{
-              fontSize: "clamp(2.488rem, 5vw, 2.488rem)",
-              fontWeight: 700,
-              lineHeight: 1.2,
+              fontSize: "2.986rem",
+              fontWeight: 900,
+              lineHeight: 1.37,
             }}
           >
             Absolute{" "}
@@ -44,13 +44,15 @@ const LandingOverview = () => {
             >
               Accuracy
             </span>{" "}
-            <span style={{ fontWeight: 700 }}>Now</span> Made Possible
+            <span style={{ fontWeight: 900 }}>Now</span> Made Possible
           </h1>
           <p
             style={{
-              fontSize: "clamp(1.2rem, 1vw, 1.2rem)",
-              lineHeight: 1.2,
+              lineHeight: 1.17,
               color: "black",
+              fontSize: "1rem",
+              fontWeight: 500,
+              lineHeight: 1.37,
             }}
           >
             Receive highly accurate invoice data—99.9% precise—within 24 hours.
@@ -58,7 +60,7 @@ const LandingOverview = () => {
             followed by a final human check, ensuring clean, error-free data
             delivered in your preferred format for effortless accounting.
           </p>
-          <div style={{ marginTop: "32px", display: "flex", gap: "20px" }}>
+          <div style={{ marginTop: "32px", display: "flex", gap: "16px" }}>
             <button
               style={{
                 padding: "1rem 1.5rem",
@@ -66,7 +68,11 @@ const LandingOverview = () => {
                 color: "#fff",
                 border: "none",
                 cursor: "pointer",
-                fontSize: "1.2rem",
+                fontSize: "1rem",
+                width: "137px",
+                height: "57px",
+                fontFamily: "Satoshi",
+                lineHeight: 1.37,
               }}
             >
               Contact Us
@@ -78,7 +84,11 @@ const LandingOverview = () => {
                 color: "#000",
                 border: "none",
                 cursor: "pointer",
-                fontSize: "1.2rem",
+                fontSize: "1rem",
+                width: "137px",
+                height: "57px",
+                fontFamily: "Satoshi",
+                lineHeight: 1.37,
               }}
             >
               Contact Us
@@ -87,13 +97,13 @@ const LandingOverview = () => {
         </div>
 
         {/* Right Black Box */}
-        <div
-          style={{
-            flex: "1 1 40%",
-            backgroundColor: "#000",
-            minHeight: "300px",
-          }}
-        ></div>
+        <div style={{ flex: "1 1 150px" }}>
+          <img
+            src="/design4.png"
+            alt="Logo"
+            style={{ width: "530px", height: "363px" }}
+          />
+        </div>
       </div>
 
       {/* Our Impact in Numbers */}
@@ -102,15 +112,16 @@ const LandingOverview = () => {
           boxSizing: "border-box",
           textAlign: "start",
           marginTop: "124px",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
         }}
       >
         <p
           style={{
-            fontSize: "clamp(1.2rem, 1vw, 1.2rem)",
+            fontSize: "1.2rem",
             fontWeight: 700,
-            lineHeight: 1.2,
-            fontFamily: "Arial, sans-serif",
+            lineHeight: 1.4,
+            fontFamily: "Satoshi",
+            margin: 0,
           }}
         >
           Our Impact in Numbers
@@ -122,8 +133,9 @@ const LandingOverview = () => {
             flexWrap: "wrap",
             justifyContent: "space-between",
             textAlign: "center",
-            fontFamily: "Arial, sans-serif",
+            fontFamily: "Satoshi",
             gap: "20px",
+            marginTop: "20px",
           }}
         >
           {[
@@ -141,17 +153,17 @@ const LandingOverview = () => {
             >
               <p
                 style={{
-                  fontSize: "clamp(2rem, 2vw, 3rem)",
-                  fontWeight: 700,
+                  fontSize: "2.5rem",
+                  fontWeight: 900,
                   margin: 0,
-                  lineHeight: 1,
+                  lineHeight: 1.1,
                 }}
               >
                 {num}
               </p>
               <p
                 style={{
-                  fontSize: "clamp(0.833rem, 1vw, 0.833rem)",
+                  fontSize: "0.833rem",
                   marginTop: "8px",
                   color: "#555",
                 }}
@@ -168,7 +180,7 @@ const LandingOverview = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          marginTop: "120px",
+          marginTop: "124px",
           backgroundColor: "#fff",
           padding: "0",
         }}
@@ -185,19 +197,20 @@ const LandingOverview = () => {
         >
           <p
             style={{
-              fontSize: "clamp(1.2rem, 1vw, 1.2rem)",
+              fontSize: "1.2rem",
               fontWeight: 700,
               color: "#000",
               margin: 0,
+              lineHeight: 1.37,
             }}
           >
             Leading Teams at{" "}
             <p
               style={{
-                fontSize: "clamp(1.2rem, 1vw, 1.2rem)",
+                fontSize: "1.2rem",
                 fontWeight: 700,
                 margin: 0,
-                lineHeight: 1.4,
+                lineHeight: 1.37,
               }}
             >
               companies using SNO
@@ -210,9 +223,8 @@ const LandingOverview = () => {
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "start",
-              gap: "50px",
+              gap: "70px",
               backgroundColor: "#000",
-              padding: "10px 0",
             }}
           >
             {[
@@ -227,10 +239,10 @@ const LandingOverview = () => {
                 style={{
                   display: "inline-block",
                   color: "#fff",
-                  fontWeight: 700,
-                  margin: "0 10px",
-                  fontSize: "clamp(1.5rem, 1.5vw, 2rem)",
+                  fontWeight: 400,
+                  fontSize: "2.986rem",
                   whiteSpace: "nowrap",
+                  fontFamily: "League Gothic",
                 }}
               >
                 {name}

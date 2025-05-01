@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import FrictionlessOverview from "./components/InvoiceHeroOverview";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import PricingTable from "./components/PricingTable";
 
 function App() {
   return (
@@ -61,7 +62,12 @@ function App() {
         <div className="mb-[120px]">
           <ContactForm />
         </div>
-        <Footer />
+        <div className="mb-[120px]">
+          <PricingTable />
+        </div>
+        <div className="mb-[120px]">
+          <Footer />
+        </div>
       </div>
     </div>
   );

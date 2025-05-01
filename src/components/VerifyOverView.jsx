@@ -8,15 +8,22 @@ const VerifyOverview = () => {
         <foreignObject x="20" y="10" width="900" height="360">
           <div
             xmlns="http://www.w3.org/1999/xhtml"
-            style={{ textAlign: "left", fontFamily: "Arial, sans-serif" }}
+            style={{ textAlign: "left", fontFamily: "Satoshi" }}
           >
-            <h2 style={{ fontSize: "24px", fontWeight: 100, margin: 0 }}>
+            <h2 style={{ fontSize: "24px", fontWeight: 400, margin: 0 }}>
               Process Overview
             </h2>
-            <h3 style={{ fontSize: "18px", fontWeight: 800, margin: "23px 0" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 900, margin: "23px 0" }}>
               Verify
             </h3>
-            <p style={{ fontSize: "14px", lineHeight: 1.2, margin: "-5px 0" }}>
+            <p
+              style={{
+                fontSize: "14px",
+                lineHeight: 1.2,
+                margin: "-5px 0",
+                fontWeight: 400,
+              }}
+            >
               Ensuring data integrity through meticulous human review.
               <br />A dual-layer verification process complemented by
               human-augmented vetting, where<br></br> the selected invoice
@@ -129,7 +136,7 @@ const VerifyOverview = () => {
           x="280"
           y="400"
           fontSize="10"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >
@@ -139,7 +146,7 @@ const VerifyOverview = () => {
           x="420"
           y="400"
           fontSize="10"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >
@@ -149,7 +156,7 @@ const VerifyOverview = () => {
           x="570"
           y="400"
           fontSize="10"
-          fontFamily="Arial, sans-serif"
+          fontFamily="Satoshi"
           fill="black"
           textAnchor="middle"
         >

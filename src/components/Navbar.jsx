@@ -7,7 +7,7 @@ const Navbar = () => {
       <div
         style={{
           width: "100%",
-          height: "80px", // Fixed height for consistency
+          height: "60px", // Fixed height for consistency
           borderBottom: "2px solid black",
           backgroundColor: "white",
           display: "flex",
@@ -15,7 +15,7 @@ const Navbar = () => {
           justifyContent: "start",
           padding: "0 0 0 120px",
           boxSizing: "border-box",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
           color: "black",
           position: "fixed", // Ensures the navbar stays fixed
           top: 0, // Sticks to the top of the page
@@ -29,9 +29,9 @@ const Navbar = () => {
           <img
             src="/designNav.PNG" // Replace with the correct path to your image
             alt="Logo"
-            style={{ width: "40px", height: "40px" }} // Adjust size as needed
+            style={{ width: "45px", height: "45px" }} // Adjust size as needed
           />
-          <div style={{ fontWeight: 100, fontSize: "1.728rem" }}>SNO</div>
+          <div style={{ fontWeight: 400, fontSize: "1.728rem", width: "57px", height:"37px" }}>SNO</div>
         </div>
       </div>
 

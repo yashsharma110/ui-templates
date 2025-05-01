@@ -6,19 +6,19 @@ const Footer = () => {
       style={{
         width: "100%",
         backgroundColor: "#fff",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
         alignItems: "flex-start",
-        gap: "40px",
+        gap: "16px",
         boxSizing: "border-box", // Ensure padding is included in width
       }}
     >
       {/* Left Logo */}
       <div style={{ flex: "1 1 150px" }}>
         <img
-          src="/design3.PNG"
+          src="/design3.png"
           alt="Logo"
           style={{ width: "197px", height: "197" }}
         />
@@ -32,7 +32,7 @@ const Footer = () => {
           justifyContent: "space-around",
           flexWrap: "wrap",
           gap: "20px",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
         }}
       >
         {[
@@ -60,7 +60,7 @@ const Footer = () => {
                 fontWeight: 700,
                 fontSize: "1.44rem",
                 marginBottom: "18px",
-                fontFamily: "Arial, sans-serif",
+                fontFamily: "Satoshi",
               }}
             >
               {section.heading}
@@ -70,16 +70,17 @@ const Footer = () => {
                 listStyle: "none",
                 padding: 0,
                 margin: 0,
-                fontFamily: "Arial, sans-serif",
+                fontFamily: "Satoshi",
               }}
             >
               {section.links.map((link, i) => (
                 <li
                   key={i}
                   style={{
-                    fontSize: "1.2rem",
+                    fontSize: "1rem",
                     marginBottom: "18px",
                     color: "#000",
+                    fontWeight: 400,
                   }}
                 >
                   {link}

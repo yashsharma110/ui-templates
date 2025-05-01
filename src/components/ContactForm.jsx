@@ -5,8 +5,7 @@ const ContactForm = () => {
     <div
       style={{
         maxWidth: "1200px",
-        padding: "20px 0",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Satoshi",
         display: "flex",
         flexWrap: "wrap",
         gap: "32px",
@@ -16,19 +15,21 @@ const ContactForm = () => {
     >
       <h1
         style={{
-          fontSize: "2.448rem",
-          fontWeight: 1000,
+          fontSize: "2.986rem",
+          fontWeight: 900,
           marginBottom: "0",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
+          lineHeight: 1.36,
         }}
       >
         Get in Touch// Simplify your Invoice Processing
       </h1>
       <p
         style={{
-          fontSize: "1.44rem",
+          fontSize: "2.488rem",
           color: "#333",
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "Satoshi",
+          lineHeight: "auto",
         }}
       >
         Transform your invoice workflow—save time, increase accuracy, and
@@ -60,7 +61,7 @@ const ContactForm = () => {
       {/* Right Image */}
       <div style={{ flex: "1 1 300px", textAlign: "center" }}>
         <img
-          src="/design2.PNG"
+          src="/design2.png"
           alt="Contact illustration"
           style={{ maxWidth: "100%", height: "auto" }}
         />
@@ -85,13 +86,16 @@ const textareaStyle = {
 };
 
 const buttonStyle = {
-  backgroundColor: "black",
-  color: "white",
   padding: "1rem 1.5rem",
-  fontSize: "1.2rem",
+  backgroundColor: "#000",
+  color: "#fff",
   border: "none",
   cursor: "pointer",
-  width: "150px",
+  fontSize: "1rem",
+  width: "137px",
+  height: "57px",
+  fontFamily: "Satoshi",
+  lineHeight: 1.37,
 };
 
 export default ContactForm;
