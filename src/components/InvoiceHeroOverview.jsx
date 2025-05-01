@@ -99,7 +99,7 @@ const LandingHero = () => {
         <div style={{ marginTop: "54px", display: "flex", gap: "20px" }}>
           <button
             style={{
-              padding: "1rem 2rem",
+              padding: "1rem 1.5rem",
               backgroundColor: "#ccc",
               color: "#000",
               fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
@@ -112,7 +112,7 @@ const LandingHero = () => {
           </button>
           <button
             style={{
-              padding: "1rem 2rem",
+              padding: "1rem 1.5rem",
               backgroundColor: "white",
               color: "#000",
               fontSize: "clamp(1rem, 2.5vw, 1.25rem)",

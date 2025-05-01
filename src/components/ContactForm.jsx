@@ -87,11 +87,11 @@ const textareaStyle = {
 const buttonStyle = {
   backgroundColor: "black",
   color: "white",
-  padding: "1rem 2rem",
+  padding: "1rem 1.5rem",
   fontSize: "1.2rem",
   border: "none",
   cursor: "pointer",
-  width: "170px",
+  width: "150px",
 };
 
 export default ContactForm;

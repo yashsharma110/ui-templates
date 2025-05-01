@@ -79,7 +79,7 @@ const AdvantagesOverview = () => {
         >
           <button
             style={{
-              padding: "1rem 2rem",
+              padding: "1rem 1.5rem",
               backgroundColor: "black",
               color: "white",
               border: "none",
@@ -91,7 +91,7 @@ const AdvantagesOverview = () => {
           </button>
           <button
             style={{
-              padding: "1rem 2rem",
+              padding: "1rem 1.5rem",
               backgroundColor: "#e0e0e0",
               color: "black",
               border: "none",

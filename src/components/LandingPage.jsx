@@ -39,7 +39,9 @@ const LandingOverview = () => {
             }}
           >
             Absolute{" "}
-            <span style={{ fontStyle: "italic", fontWeight: 100, color: "#333" }}>
+            <span
+              style={{ fontStyle: "italic", fontWeight: 100, color: "#333" }}
+            >
               Accuracy
             </span>{" "}
             <span style={{ fontWeight: 700 }}>Now</span> Made Possible
@@ -59,7 +61,7 @@ const LandingOverview = () => {
           <div style={{ marginTop: "32px", display: "flex", gap: "20px" }}>
             <button
               style={{
-                padding: "1rem 2rem",
+                padding: "1rem 1.5rem",
                 backgroundColor: "#000",
                 color: "#fff",
                 border: "none",
@@ -71,7 +73,7 @@ const LandingOverview = () => {
             </button>
             <button
               style={{
-                padding: "1rem 2rem",
+                padding: "1rem 1.5rem",
                 backgroundColor: "#ccc",
                 color: "#000",
                 border: "none",
