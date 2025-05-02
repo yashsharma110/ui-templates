@@ -18,7 +18,7 @@ const Footer = () => {
       {/* Left Logo */}
       <div style={{ flex: "1 1 150px" }}>
         <img
-          src="/design3.png"
+          src="/design3.PNG"
           alt="Logo"
           style={{ width: "197px", height: "197" }}
         />
