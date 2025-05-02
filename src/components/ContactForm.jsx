@@ -61,7 +61,7 @@ const ContactForm = () => {
       {/* Right Image */}
       <div style={{ flex: "1 1 300px", textAlign: "center" }}>
         <img
-          src="/design2.png"
+          src="/design2.PNG"
           alt="Contact illustration"
           style={{ maxWidth: "100%", height: "auto" }}
         />
